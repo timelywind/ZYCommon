@@ -16,6 +16,7 @@
 		C6083E2F22DDF02F00DFD82C /* ZYCommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6083E2E22DDF02F00DFD82C /* ZYCommonTests.m */; };
 		C6083E3A22DDF02F00DFD82C /* ZYCommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6083E3922DDF02F00DFD82C /* ZYCommonUITests.m */; };
 		C6083E4A22DDF09E00DFD82C /* UIImage+zyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6083E4922DDF09E00DFD82C /* UIImage+zyImage.m */; };
+		C68ECE3B261C5859005F770F /* ZYBubblePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE3A261C5859005F770F /* ZYBubblePopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		C6083E3B22DDF02F00DFD82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6083E4822DDF09E00DFD82C /* UIImage+zyImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+zyImage.h"; sourceTree = "<group>"; };
 		C6083E4922DDF09E00DFD82C /* UIImage+zyImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+zyImage.m"; sourceTree = "<group>"; };
+		C68ECE39261C5859005F770F /* ZYBubblePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBubblePopView.h; sourceTree = "<group>"; };
+		C68ECE3A261C5859005F770F /* ZYBubblePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBubblePopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,10 +142,28 @@
 		C6083E4722DDF05100DFD82C /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				C68ECE38261C582F005F770F /* category */,
+				C68ECE37261C5828005F770F /* Views */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		C68ECE37261C5828005F770F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C68ECE39261C5859005F770F /* ZYBubblePopView.h */,
+				C68ECE3A261C5859005F770F /* ZYBubblePopView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C68ECE38261C582F005F770F /* category */ = {
+			isa = PBXGroup;
+			children = (
 				C6083E4822DDF09E00DFD82C /* UIImage+zyImage.h */,
 				C6083E4922DDF09E00DFD82C /* UIImage+zyImage.m */,
 			);
-			path = classes;
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +298,7 @@
 			files = (
 				C6083E1A22DDF02C00DFD82C /* ViewController.m in Sources */,
 				C6083E2522DDF02F00DFD82C /* main.m in Sources */,
+				C68ECE3B261C5859005F770F /* ZYBubblePopView.m in Sources */,
 				C6083E4A22DDF09E00DFD82C /* UIImage+zyImage.m in Sources */,
 				C6083E1722DDF02C00DFD82C /* AppDelegate.m in Sources */,
 			);
