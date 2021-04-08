@@ -8,9 +8,13 @@
 
 #import "ViewController.h"
 #import "UIImage+zyImage.h"
+#import "ZYRuntime.h"
+#import "ZYTestView.h"
 
 @interface ViewController ()
-
+{
+//    UIViewController *_tempView;
+}
 @end
 
 @implementation ViewController
@@ -18,7 +22,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self test1];
+//    _tempView = [[ZYTestView alloc] init];
+//
+//    [self test1];
+    
+
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [_tempView navigationController];
+    
+//    NSLog(@"\n%s\n%s", _cmd, __func__);
 }
 
 - (void)test1 {
