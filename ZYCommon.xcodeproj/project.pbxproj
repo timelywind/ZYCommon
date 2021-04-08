@@ -20,6 +20,9 @@
 		C68ECE42261D971E005F770F /* CLLocationManager+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE41261D971E005F770F /* CLLocationManager+Runtime.m */; };
 		C68ECE48261D983B005F770F /* ZYRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE46261D983B005F770F /* ZYRuntime.m */; };
 		C68ECE6A261EDA2F005F770F /* ZYTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE69261EDA2F005F770F /* ZYTestView.m */; };
+		C68ECE70261EE1B1005F770F /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE6E261EE1B0005F770F /* NSDictionary+Safe.m */; };
+		C68ECE76261EE1D6005F770F /* EMCommonFuction.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE74261EE1D6005F770F /* EMCommonFuction.m */; };
+		C68ECE7B261EE1FA005F770F /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE7A261EE1FA005F770F /* NSArray+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,11 @@
 		C68ECE47261D983B005F770F /* ZYRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRuntime.h; sourceTree = "<group>"; };
 		C68ECE68261EDA2F005F770F /* ZYTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTestView.h; sourceTree = "<group>"; };
 		C68ECE69261EDA2F005F770F /* ZYTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTestView.m; sourceTree = "<group>"; };
+		C68ECE6E261EE1B0005F770F /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		C68ECE6F261EE1B0005F770F /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		C68ECE74261EE1D6005F770F /* EMCommonFuction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMCommonFuction.m; sourceTree = "<group>"; };
+		C68ECE75261EE1D6005F770F /* EMCommonFuction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMCommonFuction.h; sourceTree = "<group>"; };
+		C68ECE7A261EE1FA005F770F /* NSArray+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +178,11 @@
 		C68ECE38261C582F005F770F /* category */ = {
 			isa = PBXGroup;
 			children = (
+				C68ECE6F261EE1B0005F770F /* NSDictionary+Safe.h */,
+				C68ECE6E261EE1B0005F770F /* NSDictionary+Safe.m */,
+				C68ECE7A261EE1FA005F770F /* NSArray+Log.m */,
+				C68ECE75261EE1D6005F770F /* EMCommonFuction.h */,
+				C68ECE74261EE1D6005F770F /* EMCommonFuction.m */,
 				C6083E4822DDF09E00DFD82C /* UIImage+zyImage.h */,
 				C6083E4922DDF09E00DFD82C /* UIImage+zyImage.m */,
 				C68ECE47261D983B005F770F /* ZYRuntime.h */,
@@ -324,6 +337,9 @@
 				C6083E2522DDF02F00DFD82C /* main.m in Sources */,
 				C68ECE3B261C5859005F770F /* ZYBubblePopView.m in Sources */,
 				C6083E4A22DDF09E00DFD82C /* UIImage+zyImage.m in Sources */,
+				C68ECE76261EE1D6005F770F /* EMCommonFuction.m in Sources */,
+				C68ECE7B261EE1FA005F770F /* NSArray+Log.m in Sources */,
+				C68ECE70261EE1B1005F770F /* NSDictionary+Safe.m in Sources */,
 				C68ECE6A261EDA2F005F770F /* ZYTestView.m in Sources */,
 				C68ECE48261D983B005F770F /* ZYRuntime.m in Sources */,
 				C6083E1722DDF02C00DFD82C /* AppDelegate.m in Sources */,

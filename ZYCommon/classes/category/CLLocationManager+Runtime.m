@@ -41,16 +41,17 @@ bool em_check_authorization(void) {
 @implementation CLLocationManager (Runtime)
 
 +(void)load {
-    if (NSClassFromString(@"CLLocationManager")) {
-        SEL originalSelectorRequestInUse = @selector(requestWhenInUseAuthorization);
-        SEL swizzledSelectorRequestInUse  = @selector(swizzled_requestWhenInUseAuthorization);
-        SEL originalSelectorStartUpdatingLocation = @selector(startUpdatingLocation);
-        SEL swizzledSelectorStartUpdatingLocation = @selector(swizzled_startUpdatingLocation);
-        SEL originalSelectorRequestAlwaysAuthorization = @selector(requestAlwaysAuthorization);
-        SEL swizzledSelectorRequestAlwaysAuthorization = @selector(swizzled_requestAlwaysAuthorization);
-        [self swizzleInstanceMethod:NSClassFromString(@"CLLocationManager") originSelector:originalSelectorRequestInUse otherSelector:swizzledSelectorRequestInUse];
-        [self swizzleInstanceMethod:NSClassFromString(@"CLLocationManager") originSelector:originalSelectorStartUpdatingLocation otherSelector:swizzledSelectorStartUpdatingLocation];
-        [self swizzleInstanceMethod:NSClassFromString(@"CLLocationManager") originSelector:originalSelectorRequestAlwaysAuthorization otherSelector:swizzledSelectorRequestAlwaysAuthorization];
+    Class class = NSClassFromString(@"CLLocationManager");
+    if (class) {
+        SEL original_selectorRequestInUse = @selector(requestWhenInUseAuthorization);
+        SEL swizzled_selectorRequestInUse  = @selector(swizzled_requestWhenInUseAuthorization);
+        SEL original_selectorStartUpdatingLocation = @selector(startUpdatingLocation);
+        SEL swizzled_selectorStartUpdatingLocation = @selector(swizzled_startUpdatingLocation);
+        SEL original_selectorRequestAlwaysAuthorization = @selector(requestAlwaysAuthorization);
+        SEL swizzled_selectorRequestAlwaysAuthorization = @selector(swizzled_requestAlwaysAuthorization);
+        [self swizzleInstanceMethod:class originSelector:original_selectorRequestInUse otherSelector:swizzled_selectorRequestInUse];
+        [self swizzleInstanceMethod:class originSelector:original_selectorStartUpdatingLocation otherSelector:swizzled_selectorStartUpdatingLocation];
+        [self swizzleInstanceMethod:class originSelector:original_selectorRequestAlwaysAuthorization otherSelector:swizzled_selectorRequestAlwaysAuthorization];
     }
 }
 

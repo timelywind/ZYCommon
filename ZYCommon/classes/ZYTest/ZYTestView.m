@@ -10,5 +10,19 @@
 
 @implementation ZYTestView
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupSubViews];
+    }
+    return self;
+}
+
+/// 创建子视图
+- (void)setupSubViews {
+    
+}
+
+
 
 @end
