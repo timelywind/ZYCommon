@@ -19,6 +19,7 @@
 		C68ECE3B261C5859005F770F /* ZYBubblePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE3A261C5859005F770F /* ZYBubblePopView.m */; };
 		C68ECE42261D971E005F770F /* CLLocationManager+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE41261D971E005F770F /* CLLocationManager+Runtime.m */; };
 		C68ECE48261D983B005F770F /* ZYRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE46261D983B005F770F /* ZYRuntime.m */; };
+		C68ECE6A261EDA2F005F770F /* ZYTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE69261EDA2F005F770F /* ZYTestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		C68ECE41261D971E005F770F /* CLLocationManager+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Runtime.m"; sourceTree = "<group>"; };
 		C68ECE46261D983B005F770F /* ZYRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRuntime.m; sourceTree = "<group>"; };
 		C68ECE47261D983B005F770F /* ZYRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRuntime.h; sourceTree = "<group>"; };
+		C68ECE68261EDA2F005F770F /* ZYTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTestView.h; sourceTree = "<group>"; };
+		C68ECE69261EDA2F005F770F /* ZYTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 		C68ECE4F261D9B43005F770F /* ZYTest */ = {
 			isa = PBXGroup;
 			children = (
+				C68ECE68261EDA2F005F770F /* ZYTestView.h */,
+				C68ECE69261EDA2F005F770F /* ZYTestView.m */,
 			);
 			path = ZYTest;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				C6083E2522DDF02F00DFD82C /* main.m in Sources */,
 				C68ECE3B261C5859005F770F /* ZYBubblePopView.m in Sources */,
 				C6083E4A22DDF09E00DFD82C /* UIImage+zyImage.m in Sources */,
+				C68ECE6A261EDA2F005F770F /* ZYTestView.m in Sources */,
 				C68ECE48261D983B005F770F /* ZYRuntime.m in Sources */,
 				C6083E1722DDF02C00DFD82C /* AppDelegate.m in Sources */,
 			);
