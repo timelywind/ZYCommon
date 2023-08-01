@@ -16,6 +16,7 @@
 		C6083E2F22DDF02F00DFD82C /* ZYCommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6083E2E22DDF02F00DFD82C /* ZYCommonTests.m */; };
 		C6083E3A22DDF02F00DFD82C /* ZYCommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6083E3922DDF02F00DFD82C /* ZYCommonUITests.m */; };
 		C6083E4A22DDF09E00DFD82C /* UIImage+zyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6083E4922DDF09E00DFD82C /* UIImage+zyImage.m */; };
+		C648A0662A78D02200312AAD /* EMGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C648A0642A78D02200312AAD /* EMGCDTimer.m */; };
 		C68ECE3B261C5859005F770F /* ZYBubblePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE3A261C5859005F770F /* ZYBubblePopView.m */; };
 		C68ECE42261D971E005F770F /* CLLocationManager+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE41261D971E005F770F /* CLLocationManager+Runtime.m */; };
 		C68ECE48261D983B005F770F /* ZYRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = C68ECE46261D983B005F770F /* ZYRuntime.m */; };
@@ -61,6 +62,8 @@
 		C6083E3B22DDF02F00DFD82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6083E4822DDF09E00DFD82C /* UIImage+zyImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+zyImage.h"; sourceTree = "<group>"; };
 		C6083E4922DDF09E00DFD82C /* UIImage+zyImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+zyImage.m"; sourceTree = "<group>"; };
+		C648A0642A78D02200312AAD /* EMGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMGCDTimer.m; sourceTree = "<group>"; };
+		C648A0652A78D02200312AAD /* EMGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGCDTimer.h; sourceTree = "<group>"; };
 		C68ECE39261C5859005F770F /* ZYBubblePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBubblePopView.h; sourceTree = "<group>"; };
 		C68ECE3A261C5859005F770F /* ZYBubblePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBubblePopView.m; sourceTree = "<group>"; };
 		C68ECE40261D971E005F770F /* CLLocationManager+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+Runtime.h"; sourceTree = "<group>"; };
@@ -159,11 +162,21 @@
 		C6083E4722DDF05100DFD82C /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				C648A0632A78D02200312AAD /* ZYCustom */,
 				C68ECE4F261D9B43005F770F /* ZYTest */,
 				C68ECE38261C582F005F770F /* category */,
 				C68ECE37261C5828005F770F /* Views */,
 			);
 			path = classes;
+			sourceTree = "<group>";
+		};
+		C648A0632A78D02200312AAD /* ZYCustom */ = {
+			isa = PBXGroup;
+			children = (
+				C648A0642A78D02200312AAD /* EMGCDTimer.m */,
+				C648A0652A78D02200312AAD /* EMGCDTimer.h */,
+			);
+			path = ZYCustom;
 			sourceTree = "<group>";
 		};
 		C68ECE37261C5828005F770F /* Views */ = {
@@ -340,6 +353,7 @@
 				C68ECE76261EE1D6005F770F /* EMCommonFuction.m in Sources */,
 				C68ECE7B261EE1FA005F770F /* NSArray+Log.m in Sources */,
 				C68ECE70261EE1B1005F770F /* NSDictionary+Safe.m in Sources */,
+				C648A0662A78D02200312AAD /* EMGCDTimer.m in Sources */,
 				C68ECE6A261EDA2F005F770F /* ZYTestView.m in Sources */,
 				C68ECE48261D983B005F770F /* ZYRuntime.m in Sources */,
 				C6083E1722DDF02C00DFD82C /* AppDelegate.m in Sources */,
